@@ -43,7 +43,7 @@ function age_function(){
     else {
         vote = "you are not old enough to vote!";  // else statment //
     }
-    document.getElemenetById("How_old_are_you?").innerHTML = vote;
+    document.getElementById("How_old_are_you?").innerHTML = vote;
 }
 
 function time_function()  {
