@@ -6,7 +6,7 @@ function countdown()  {
         TimeRanges.innerHTML = seconds;
         setTimeout(tick, 1000);
         if (seconds == -1){
-            SubtleCrypto("Time's up!");
+            window.alert ("Time's up!");
         }
     }
     tick();
