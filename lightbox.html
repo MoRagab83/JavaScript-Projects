@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <script src="lightbox,js" defer></script>
+		   <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Motorbikes</h1>
+<p><B>One of the earliest custom motorcycles we know about was built by Harold “Oily” Karslake, 
+an engineer and trails rider who lived at the turn of the 20th century. In 1902 he built a motorcycle, 
+the Dreadnought, which combined the frame and engine from different machines and unique scratch-built components</B></p>
+    </main>
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<div>
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/4hTh0vHbUvE">
+    </iframe>
+  </div>
+
+  <p>
+    Please provide us with your basic contact information.
+ </p>
+    <form action=""method="post">
+ <input class="rsvp" type="text" value="First Name">
+ <input class="rsvp" type="text" value="Last Name">
+ <input class="rsvp" type="text" value="Email Address">
+ <input class="rsvp" type="text" value="Phone Number">
+ <div class="form-spacer">
+   <label class="terms"> Terms and Conditions</label>
+ </div>
+ <div>
+ <input type="submit" value="submit">
+ </div>
+ <div>
+ <input type="submit" vlaue="submit">
+ </div>
+ </form>
+ </div>
+ <!-- FOOTER -->
+ <div>
+ www.custom_motorbikes.forsale 
+ </div>
+ <!-- END FOOTER -->
+
+    
+</body>
+</html>
