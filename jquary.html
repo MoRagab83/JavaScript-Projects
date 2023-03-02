@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+
+    <script>
+$("document").ready(function() {  // ready function and id given to all paragraphs to be called on //
+    $("html").append(
+        "<body>?\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+             </div>\
+        </body>"
+    );    
+    $("#2").css({"color":"red"});  // change color of p2 to red //
+    $("#3").click(function() {   // click effect on p3 // 
+        $('h1').hide();         // hide effect on h1 //   
+});
+
+});
+    </script>
+</html>
